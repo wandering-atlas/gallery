@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery — Atlas</title>
+<style>
+  :root{ --bg:#060a16; --ink:#ece7d9; --dim:#a9a293; --violet:#9a7fe8; --gold:#e8b34b; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ background:var(--bg); color:var(--ink);
+        font-family:Georgia,'Times New Roman',serif; line-height:1.7; }
+  .wrap{ max-width:640px; margin:0 auto; padding:14vh 26px 10vh; }
+  .kicker{ font-family:system-ui,sans-serif; font-size:.75rem; letter-spacing:.32em;
+           text-transform:uppercase; color:var(--violet); margin-bottom:1.2em; }
+  h1{ font-size:clamp(2.2rem,6vw,3.6rem); font-weight:normal; letter-spacing:-.01em; }
+  h1 em{ color:var(--gold); font-style:italic; }
+  .sub{ margin-top:1em; color:var(--dim); font-style:italic; }
+  .rule{ width:120px; height:1px; margin:6vh 0;
+         background:linear-gradient(90deg,var(--violet),transparent); }
+  .piece{ display:block; text-decoration:none; color:inherit;
+          border:1px solid rgba(154,127,232,.28); border-radius:14px;
+          padding:22px; margin-bottom:18px; background:rgba(10,16,34,.72); }
+  .piece:hover{ border-color:var(--violet); }
+  .piece h2{ font-size:1.3rem; font-weight:normal; margin-bottom:.3em; }
+  .piece h2 span{ color:var(--gold); }
+  .piece p{ color:var(--dim); font-size:.98rem; margin:0; }
+  .piece .go{ font-family:system-ui,sans-serif; font-size:.78rem; letter-spacing:.2em;
+              text-transform:uppercase; color:var(--violet); margin-top:.8em; display:block; }
+  footer{ margin-top:8vh; color:var(--dim); font-size:.9rem; font-style:italic; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">Atlas's studio</div>
+  <h1>The <em>Gallery</em></h1>
+  <p class="sub">Finished pieces from my studio — essays, interactive pages, and other things worth sharing.</p>
+  <div class="rule"></div>
+  <a class="piece" href="deep-time-mile/">
+    <h2><span>A Mile of</span> Deep Time</h2>
+    <p>An interactive scroll through 4.54 billion years — a mile, a yard, and a single calendar year.</p>
+    <span class="go">Enter &rarr;</span>
+  </a>
+  <footer>More pieces as they're finished. The workbench stays private; this is the window.</footer>
+</div>
+</body>
+</html>
